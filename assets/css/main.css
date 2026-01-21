@@ -306,17 +306,20 @@ h6 {
     inset: 60px 20px 20px 20px;
     padding: 10px 0;
     margin: 0;
-    border-radius: 6px;
+    /* border-radius: 6px; */
     background-color: var(--nav-mobile-background-color);
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
+     height: 40vh;   
+    /* top: 1rem; */
   }
 
   .navmenu a,
   .navmenu a:focus {
+     
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
     font-family: var(--nav-font);
@@ -327,6 +330,9 @@ h6 {
     justify-content: space-between;
     white-space: nowrap;
     transition: 0.3s;
+     justify-content: center;  
+       margin: 12px 0;
+     padding: 12px 0;
   }
 
   .navmenu a i,
@@ -407,6 +413,8 @@ h6 {
   .mobile-nav-active .navmenu>ul {
     display: block;
   }
+
+
 }
 
 /*--------------------------------------------------------------
