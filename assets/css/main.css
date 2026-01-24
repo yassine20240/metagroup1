@@ -987,7 +987,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.get-started .php-email-form button[type=submit] {
+  button[type=submit] {
   color: var(--contrast-color);
   background: var(--accent-color);
   border: 0;
@@ -996,7 +996,7 @@ section,
   /* border-radius: 4px; */
 }
 
-.get-started .php-email-form button[type=submit]:hover {
+  button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
