@@ -1,5 +1,4 @@
- 
-:root {
+ :root {
   --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -9,49 +8,49 @@
 }
 
 /* =========================
-   Global Colors
+   Global Colors (Blue + Green)
 ========================= */
 :root {
   --background-color: #ffffff;        /* خلفية الموقع */
-  --default-color: #2e2e2e;           /* النص */
-  --heading-color: #1f1f1f;           /* العناوين */
+  --default-color: #2c2c2c;           /* النص */
+  --heading-color: #123a4a;           /* أزرق غامق للعناوين */
 
-  --accent-color: #d4a017;            /* ذهبي راقي (فخامة + ثقة) */
+  --accent-color: #2f9e44;            /* أخضر واضح (بناء + ثقة) */
 
   --surface-color: #ffffff;           /* الكروت */
-  --contrast-color: #ffffff;          /* نص فوق الألوان الداكنة */
+  --contrast-color: #ffffff;          /* نص فوق الداكن */
 }
 
 /* =========================
    Navigation Colors
 ========================= */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.7);
+  --nav-color: rgba(255, 255, 255, 0.75);
   --nav-hover-color: #ffffff;
 
   --nav-mobile-background-color: #ffffff;
 
   --nav-dropdown-background-color: #ffffff;
-  --nav-dropdown-color: #1f1f1f;
-  --nav-dropdown-hover-color: #d4a017;
+  --nav-dropdown-color: #123a4a;
+  --nav-dropdown-hover-color: #2f9e44; /* أخضر */
 }
 
 /* =========================
    Light Sections
 ========================= */
 .light-background {
-  --background-color: #f4f6f7;
+  --background-color: #f2f6f8;
   --surface-color: #ffffff;
 }
 
 /* =========================
-   Dark Sections (Footer / Hero)
+   Dark Sections (Hero / Footer)
 ========================= */
 .dark-background {
-  --background-color: #0f0f0f;
-  --default-color: #eaeaea;
+  --background-color: #0e2a36;        /* أزرق داكن */
+  --default-color: #e4f1f6;
   --heading-color: #ffffff;
-  --surface-color: #1c1c1c;
+  --surface-color: #163d4f;
   --contrast-color: #ffffff;
 }
 
@@ -61,6 +60,7 @@
 :root {
   scroll-behavior: smooth;
 }
+
 
 /*--------------------------------------------------------------
 # General Styling & Shared Classes
