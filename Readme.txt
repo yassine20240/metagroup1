@@ -45,3 +45,4 @@
 :root {
   scroll-behavior: smooth;
 }
+hero5 delte 
