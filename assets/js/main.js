@@ -160,4 +160,60 @@
    */
   new PureCounter();
 
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })();
+
+
+
+function sendWhatsAppMessage(event) {
+    event.preventDefault(); // يمنع reload
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    var phoneNumber = "212674857790"; // بلا + وبلا فراغات
+
+    var whatsappMessage =
+        "📩 New Contact Message\n\n" +
+        "Name: " + name + "\n" +
+        "Email: " + email + "\n" +
+        "Subject: " + subject + "\n\n" +
+        "Message:\n" + message;
+
+    var whatsappURL =
+        "https://wa.me/" + phoneNumber + "?text=" +
+        encodeURIComponent(whatsappMessage);
+
+    window.open(whatsappURL, "_blank");
+
+    // Reset form
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
+}
